@@ -117,7 +117,7 @@ const VideoCardScores = ({ video }: Props) => {
               width={32}
             />
             <span className={classes.nb_tournesol}>
-              {video.tournesol_score.toFixed(0)}
+              {video.tournesol_score.toFixed(0).replace(/^-0$/,0)}
             </span>
           </Box>
         </Tooltip>
